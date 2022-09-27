@@ -8,13 +8,16 @@ fieldset {
   margin: auto;
   padding-bottom: 20px;
   background-color: #add8e6;
+  border-radius: 15px;
 }
 .maxWidth {
   width: 97%;
   background-color: #6fbbd3;
+  border-radius: 15px;
 }
 .getBlue {
   background-color: #6fbbd3;
+  border-radius: 15px;
 }
 #COMENTARIOERROR {
   margin-bottom: 20px;
