@@ -1,0 +1,28 @@
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+fieldset {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 20px;
+  background-color: #add8e6;
+}
+.maxWidth {
+  width: 97%;
+  background-color: #6fbbd3;
+}
+.getBlue {
+  background-color: #6fbbd3;
+}
+#COMENTARIOERROR {
+  margin-bottom: 20px;
+}
+.errorMsg {
+  font-size: 10px;
+  color: red;
+}
+span {
+  display: block;
+}

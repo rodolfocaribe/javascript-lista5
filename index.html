@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista 05</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<fieldset>
+  <h2>Formulário</h2>
+  <form>
+    <label for="txtNome">Nome: </label>
+    <input class="maxWidth" type="text" name="NOME" id="txtNome" onkeypress="limparErrorMsg('NOME')">
+    <span id="NOMEERROR" class="errorMsg"></span>
+
+    <label for="txtEndereco">Endereço: </label>
+    <input class="maxWidth" type="text" name="ENDERECO" id="txtEndereco" onkeypress="limparErrorMsg('ENDERECO')">
+    <span id="ENDERECOERROR" class="errorMsg"></span>
+
+    <label for="txtTelefone">Telefone: </label>
+    <input class="maxWidth" type="tel" name="TELEFONE" id="txtTelefone" onkeypress="limparErrorMsg('TELEFONE')">
+    <span id="TELEFONEERROR" class="errorMsg"></span>
+
+    <label for="txtIdade">Idade: </label>
+    <input class="maxWidth" type="number" name="IDADE" id="txtIdade" onkeypress="limparErrorMsg('IDADE')">
+    <span id="IDADEERROR" class="errorMsg"></span>
+
+    <label for="txtAltura">Altura: </label>
+    <input class="maxWidth" type="text" name="ALTURA" id="txtAltura" onkeypress="limparErrorMsg('ALTURA')">
+    <span id="ALTURAERROR" class="errorMsg"></span>
+
+    <label for="checkFem">Feminino: </label>
+    <input type="radio" class="getBlue" id="checkFem" name="SEXO" value="fem">
+
+    <label for="checkMasc">Masculino: </label>
+    <input type="radio" class="getBlue" id="checkMasc" name="SEXO" value="masc">
+    <span id="SEXOERROR" class="errorMsg"></span>
+
+    <label for="checkEstadoCivil">Estado Civil</label>
+    <select class="maxWidth" name="ESTADOCIVIL" id="checkEstadoCivil" onchange="limparErrorMsg('ESTADOCIVIL')">
+      <option value="" selected disabled hidden>Selecione</option>
+      <option value="solteiro">Solteiro</option>
+      <option value="casado">Casado</option>
+      <option value="divorciado">Divorciado</option>
+      <option value="separado">Separado</option>
+      <option value="viuvo">Viúvo</option>
+    </select>
+    <span id="ESTADOCIVILERROR" class="errorMsg"></span>
+
+    <label >Comentário: </label>
+    <textarea class="maxWidth" name="COMENTARIO" id="idComentario" cols="30" rows="10" onkeypress="limparErrorMsg('COMENTARIO')"></textarea>
+    <span id="COMENTARIOERROR" class="errorMsg"></span>
+
+    <input type="button"  class="getBlue" name="" value="Cadastrar" onclick="validaInputs()">
+    <input type="reset"  class="getBlue" name=""  value="Limpar">
+  </form>
+</fieldset>
+<script src="js/main.js"></script>
+</body>
+</html>
